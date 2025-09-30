@@ -3,7 +3,7 @@
 This repository contains the code and dataset split for our paper on **Visual-Guided Human-Object Interaction (HOI) Detection**. Our approach leverages visual support examples to detect unseen HOI categories, offering a practical alternative to text-based methods in scenarios where language descriptions are ambiguous or unavailable.
 
 ## News
-*   **[September 2025]** Initial code and dataset split released.
+*   **[September 2025]** Dataset split released.
 
 ## Abstract
 Detecting unseen Human-Object Interactions (HOIs) is a critical challenge in open-world scenarios. Existing methods heavily rely on text-based priors from large vision-language models (VLMs), which can be unreliable for fine-grained or domain-specific interactions. We introduce a novel **Visual-Guided HOI (VG-HOI)** detection task, where a model learns to recognize novel HOIs using a single visual support image per category, without retraining. Our approach extracts human, object, and union prototypes from the support image and uses them to guide the query image's feature extraction via cross-attention, enabling effective generalization to unseen interactions.
@@ -67,7 +67,7 @@ We extend HICO-DET by splitting its 600 HOI categories into a **base set** and f
 | **UV (Unseen Verb)** | Novel verbs applied to seen objects. | 91 | `[1, 2, 5, 7, 8, 15, 19, 22, 25, 88, 89, 96, 113, 114, 122, 126, 129, 130, 135, 144, 150, 154, 158, 168, 175, 182, 184, 217, 228, 235, 254, 255, 267, 271, 288, 293, 296, 300, 303, 307, 310, 333, 334, 339, 342, 349, 357, 359, 373, 391, 399, 404, 405, 412, 420, 422, 425, 436, 439, 441, 451, 458, 460, 468, 484, 485, 486, 492, 496, 499, 507, 510, 513, 517, 521, 522, 525, 526, 547, 560, 562, 567, 568, 570, 573, 574, 590, 591, 592, 593, 595]` |
 | **UOUV (Unseen Object & Verb)** | Novel combinations of novel verbs and objects. | 51 | `[32, 33, 36, 41, 44, 47, 50, 55, 56, 57, 59, 61, 62, 66, 67, 71, 72, 74, 77, 82, 83, 93, 94, 187, 188, 189, 191, 192, 200, 206, 240, 241, 244, 245, 258, 262, 274, 276, 281, 313, 322, 376, 379, 381, 445, 536, 551, 554, 556, 578, 581]` |
 
-    ```
+The code will be released as soon as possible.
 
 ## Acknowledgements
 We thank the authors of HICO-DET and GEN-VLKT for their valuable datasets and codebases.
