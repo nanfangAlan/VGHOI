@@ -67,43 +67,7 @@ We extend HICO-DET by splitting its 600 HOI categories into a **base set** and f
 | **UV (Unseen Verb)** | Novel verbs applied to seen objects. | 91 | `[1, 2, 5, 7, 8, 15, 19, 22, 25, 88, 89, 96, 113, 114, 122, 126, 129, 130, 135, 144, 150, 154, 158, 168, 175, 182, 184, 217, 228, 235, 254, 255, 267, 271, 288, 293, 296, 300, 303, 307, 310, 333, 334, 339, 342, 349, 357, 359, 373, 391, 399, 404, 405, 412, 420, 422, 425, 436, 439, 441, 451, 458, 460, 468, 484, 485, 486, 492, 496, 499, 507, 510, 513, 517, 521, 522, 525, 526, 547, 560, 562, 567, 568, 570, 573, 574, 590, 591, 592, 593, 595]` |
 | **UOUV (Unseen Object & Verb)** | Novel combinations of novel verbs and objects. | 51 | `[32, 33, 36, 41, 44, 47, 50, 55, 56, 57, 59, 61, 62, 66, 67, 71, 72, 74, 77, 82, 83, 93, 94, 187, 188, 189, 191, 192, 200, 206, 240, 241, 244, 245, 258, 262, 274, 276, 281, 313, 322, 376, 379, 381, 445, 536, 551, 554, 556, 578, 581]` |
 
-## Installation
-1.  Clone this repository.
-    ```bash
-    git clone https://github.com/your-username/VG-HOI.git
-    cd VG-HOI
     ```
-2.  Create a conda environment and install dependencies.
-    ```bash
-    conda create -n vghoi python=3.8
-    conda activate vghoi
-    pip install -r requirements.txt
-    ```
-
-## Training & Evaluation
-### Training
-To train the VG-HOI model on the base set:
-```bash
-python train.py --data_path /path/to/your/hico_20160224_det --output_dir /path/to/save/checkpoints
-```
-
-### Evaluation
-To evaluate the trained model on the four novel sets:
-```bash
-python evaluate.py --data_path /path/to/your/hico_20160224_det --model_path /path/to/save/checkpoints/model_best.pth
-```
-This script will automatically load the dataset splits and compute the mAP for each of the UC, UO, UV, and UOUV sets, as well as the Full set.
-
-## Citation
-If you find our work helpful, please consider citing:
-```bibtex
-@article{your_vghoi_paper,
-  title={Visual-Guided Human-Object Interaction Detection},
-  author={Your Name and Co-authors},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2025}
-}
-```
 
 ## Acknowledgements
-We thank the authors of HICO-DET and GEN-VLKT for their valuable datasets and codebases, which greatly facilitated our research.
+We thank the authors of HICO-DET and GEN-VLKT for their valuable datasets and codebases.
