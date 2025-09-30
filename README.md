@@ -7,6 +7,8 @@ This repository contains the code and dataset split for our paper on **Visual-Gu
 
 ## Abstract
 Detecting unseen Human-Object Interactions (HOIs) is a critical challenge in open-world scenarios. Existing methods heavily rely on text-based priors from large vision-language models (VLMs), which can be unreliable for fine-grained or domain-specific interactions. We introduce a novel **Visual-Guided HOI (VG-HOI)** detection task, where a model learns to recognize novel HOIs using a single visual support image per category, without retraining. Our approach extracts human, object, and union prototypes from the support image and uses them to guide the query image's feature extraction via cross-attention, enabling effective generalization to unseen interactions.
+<img width="5376" height="2453" alt="model" src="https://github.com/user-attachments/assets/24cdd77f-7f6a-4e82-b217-aec4f42a9558" />
+
 
 ## Main Results
 Our model achieves state-of-the-art performance on our extended HICO-DET benchmark for unseen HOI generalization.
