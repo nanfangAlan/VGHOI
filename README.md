@@ -32,9 +32,19 @@ HICO-DET is a large-scale dataset for HOI detection. It contains:
 The dataset is divided into a **training set** (38,118 images) and a **testing set** (9,648 images).
 
 ### Download Instructions
-1.  **Images and Annotations**: Download the HICO-DET dataset from the official website:
-    [http://www-personal.umich.edu/~ywchao/hico/](http://www-personal.umich.edu/~ywchao/hico/)
-    This will give you the `hico_20160224_det` folder.
+1.  **Images and Annotations**:
+HICO-DET dataset can be downloaded [here](https://drive.google.com/file/d/1dUByzVzM6z1Oq4gENa1-t0FLhr0UtDaS/view). After finishing downloading, unpack the tarball (`hico_20160224_det.tar.gz`) to the `data` directory.
+
+Instead of using the original annotations files, we use the annotation files provided by the PPDM authors. The annotation files can be downloaded from [here](https://drive.google.com/open?id=1WI-gsNLS-t0Kh8TVki1wXqc3y2Ow1f2R). The downloaded annotation files have to be placed as follows.
+```
+data
+ └─ hico_20160224_det
+     |─ annotations
+     |   |─ trainval_hico.json
+     |   |─ test_hico.json
+     |   └─ corre_hico.npy
+     :
+```
 
 2.  **Our Extended Split**: Download our dataset split files from our GitHub repository:
     [https://github.com/nanfangAlan/VGHOI/split.json](https://github.com/nanfangAlan/VGHOI/split.json)
@@ -47,15 +57,12 @@ After downloading and placing the split files, your dataset directory should loo
 hico_20160224_det/
 ├── annotations/
 │   ├── trainval_hico.json
-│   └── test_hico.json
+│   ├── test_hico.json
+│   └── corre_hico.npy
 ├── images/
 │   ├── train2015/
 │   └── val2015/
-├── hoi_list.json
-├── object_list.json
-├── verb_list.json
-├── split.json/
-└── ... (other original files)
+└── split.json
 ```
 
 ### Our Split for VG-HOI Benchmark
