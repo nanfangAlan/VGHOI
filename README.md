@@ -37,7 +37,7 @@ The dataset is divided into a **training set** (38,118 images) and a **testing s
     This will give you the `hico_20160224_det` folder.
 
 2.  **Our Extended Split**: Download our dataset split files from our GitHub repository:
-    [https://github.com/your-username/VG-HOI](https://github.com/your-username/VG-HOI)
+    [https://github.com/nanfangAlan/VGHOI/split.json](https://github.com/nanfangAlan/VGHOI/split.json)
     Place the downloaded split files into the `hico_20160224_det` directory.
 
 ### Dataset Structure
@@ -54,7 +54,7 @@ hico_20160224_det/
 ├── hoi_list.json
 ├── object_list.json
 ├── verb_list.json
-├── _split.json_/
+├── split.json/
 └── ... (other original files)
 ```
 
